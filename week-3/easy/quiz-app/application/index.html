@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>QUIZ</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body id="body">
+    <div class="page">
+        <div id="qn" class="Question">
+            Which language runs in a Web Browser?
+        </div>
+
+        <form class="form">
+            <label id="op1" class="label">
+                <input type="radio" name="color" /> JAVA
+            </label>
+            <label id="op2" class="label">
+                <input type="radio" name="color" /> C
+            </label>
+            <label id="op3" class="label">
+                <input type="radio" name="color" /> PYTHON
+            </label>
+            <label id="op4" class="label">
+                <input type="radio" name="color" /> JavaScript
+            </label>
+        </form>
+        <input onclick="next()" class="submit" type="button" value="Submit" />
+    </div>
+
+    <!-- ✅ Load script as a module -->
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
