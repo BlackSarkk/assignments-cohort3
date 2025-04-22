@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container {
+            top: 88vh;
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+
+            .btn {
+                border-radius: 8px;
+                padding: 5px 10px;
+                width: 90px;
+                cursor: pointer;
+                color: white;
+                
+                &:hover {
+                    transform: scale(1.1);
+                    transition: all 0.2s ease-in-out;
+                }
+                
+                &:active{
+                    transform: scale(0.99);
+                }
+            }
+        }
+    </style>
+</head>
+
+<body id="body">
+    <div class="container">
+        <button onclick="document.getElementById('body').style.backgroundColor = 'red'" class="btn" class="btn" style="background-color: red;" id="red">RED</button>
+        <button onclick="document.body.style.backgroundColor = 'rgb(238, 210, 0)'" class="btn" style="background-color: rgb(238, 210, 0);" id="yellow">YELLOW</button>
+        <button onclick="document.body.style.backgroundColor = 'black'" class="btn" style="background-color: rgb(0, 0, 0);" id="black">BLACK</button>
+        <button onclick="document.body.style.backgroundColor = 'rgb(208, 0, 255)'" class="btn" style="background-color: rgb(208, 0, 255);" id="purple">PURPLE</button>
+        <button onclick="document.body.style.backgroundColor = 'rgb(1, 211, 26)'" class="btn" style="background-color: rgb(1, 211, 26);" id="green">GREEN</button>
+        <button onclick="document.body.style.backgroundColor = 'rgb(0, 150, 205)'" class="btn" style="background-color: rgb(0, 150, 205);" id="blue">BLUE</button>
+        <button onclick="document.body.style.backgroundColor = 'rgb(255, 106, 0)'" class="btn" style="background-color: rgb(255, 106, 0);" id="orange">ORANGE</button>
+    </div>
+</body>
+
+</html>
