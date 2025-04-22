@@ -11,22 +11,17 @@ const expensiveTask = () => {
 expensiveTask()
 
 
-
 const read = () => {
-    console.log(fs.readFile('test1.txt', 'utf-8'));
-};
-
-read();
-
-
-/**
- const read = () => {
     fs.readFile('test1.txt', 'utf-8', (err, data) => {
-        if (err) {
-            console.error(err);
+        if(err){
+            console.log(err)
+            return;
+        } else{
+            console.log(data)
             return;
         }
-        console.log(data);
-    });
-};
- */
+    })
+}
+
+
+read()
