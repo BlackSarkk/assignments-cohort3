@@ -6,7 +6,22 @@
 */
 
 function countVowels(str) {
-    // Your code here
+
+  let vCount = 0
+  let dStr = str.toLowerCase().split('')
+  dStr.forEach(element => {
+    if (element == 'a' | element == 'e' | element == 'i' | element == 'o' | element == 'u') {
+      vCount++
+    }
+  });
+  return vCount;
+
+  // return [...str.toLowerCase()].filter(c => 'aeiou'.includes(c)).length;      //or
 }
+
+
+
+
+console.log(countVowels('rahul'))
 
 module.exports = countVowels;
