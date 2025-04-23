@@ -15,7 +15,7 @@ body{
         /* padding: 20px; */
         width: 500px;
         background-color: white;
-        /* height: 300px; */
+        min-height: 350px;
         border-radius: 25px;
         display: flex;
         flex-direction: column;
@@ -32,7 +32,7 @@ body{
 
 .Question{
     text-align: center;
-    margin: 20px auto;
+    margin: 30px auto;
     width: 90%;
     font-family: sans-serif;
     font-size: 35px;
@@ -60,6 +60,6 @@ body{
 .label{
     font-family: sans-serif;
     font-size: 20px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     margin: 2px;
 }
